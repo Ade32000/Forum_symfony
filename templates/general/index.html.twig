@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    {# <h1>Hello! </h1>
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code><a href="{{ 'src/Controller/GeneralController.php'|file_link(0) }}">src/Controller/GeneralController.php</a></code></li>
+        <li>Your template at <code><a href="{{ 'templates/general/index.html.twig'|file_link(0) }}">templates/general/index.html.twig</a></code></li>
+    </ul> #}
+    <div>
+        <h3>Bienvenue... Manant !!!</h3>
+        <h5>Balance ton pseudo et fais nous rêver :</h5>
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            {{ form_end(form) }}  
+    </div>
+
+
+</div>
+
+
+{% endblock %}
